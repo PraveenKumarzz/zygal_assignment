@@ -1,0 +1,93 @@
+body{
+  
+    margin: 0;
+    
+ }
+ *{
+     margin: 0;
+     box-sizing: border-box;
+ }
+ 
+ .container{
+   
+     align-items: center;
+     justify-content: center;
+   
+     display: flex;
+    min-width:  100vw;
+     min-height: 90vh;
+   
+     align-items: center;
+     flex-direction: column;
+     
+ }
+ 
+ .month-year select{
+ 
+     padding: 15px 30px;
+     font-size: 1rem;
+     margin-right: 4.5rem;
+     
+     border: 1.5px solid black;
+ }
+ 
+ .month-year{
+     padding: 2px 2px;
+     margin-left: 55px;
+     display: flex;
+     justify-content: left;
+     
+ 
+ }
+ 
+ #calendar{
+     margin: auto;
+    
+ 
+     border: 1px solid rgb(72, 72, 72);
+     margin: 1.25rem 0;
+     
+ }
+ #calendar .week-row{
+     border-bottom: 1px solid rgb(72, 72, 72);
+     display: flex;
+     justify-content: space-evenly;
+     align-items: center;
+ }
+ #calendar .week-row:last-of-type{
+     border: none;
+ }
+ #calendar .week-row .day-cell{
+     border-right: 1px solid rgb(59, 59, 59);
+     padding: 9px;
+     min-width: 3.1rem;
+     min-height: 1.8rem;
+     text-align: center;
+     width: 90%;
+ }
+ #calendar .week-row .day-cell:last-of-type{
+     border: none;
+ }
+ #calendar .week-row .day-cell.active{
+     background-color: rgb(2, 142, 2);
+     color: #fff;
+ }
+ input{
+     padding: 17px;
+     border-radius: 0;
+     outline: none;
+     border: 1px solid rgb(63, 63, 63);
+     vertical-align: middle;
+     margin-right: 18px;
+     margin-left: -44px;
+ }
+ button{
+     padding: 16px 29px;
+     background: rgb(95, 147, 244);
+     color: #fff;
+     outline: none;
+     font-size: 18px;
+     border: none;
+     vertical-align: middle;
+     cursor: pointer;
+ }
